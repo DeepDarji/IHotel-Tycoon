@@ -1,44 +1,21 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeManager : MonoBehaviour
 {
-    public int upgradeCost = 200;
-    private MoneyManager moneyManager;
-    private int incomePerClick = 50;
+    public MoneyManager moneyManager;
+    public int upgradeCost = 300;
+    public Text upgradeText;
+    private int level = 1;
 
-    void Start()
+    public void Upgrade()
     {
-        moneyManager = FindObjectOfType<MoneyManager>();
-
-        if (PlayerPrefs.HasKey("UpgradeLevel"))
+        if (moneyManager.SpendMoney(upgradeCost))
         {
-            incomePerClick = PlayerPrefs.GetInt("UpgradeLevel");
-            Debug.Log("Loaded Upgrade Level: Earn $" + incomePerClick + " per click.");
+            level++;
+            upgradeCost += 200; // Increase price
+            upgradeText.text = "Upgrade: $" + upgradeCost;
+            Debug.Log("Upgraded to level " + level);
         }
-        else
-        {
-            Debug.Log("No upgrade found. Default earnings per click: $" + incomePerClick);
-        }
-    }
-
-    public void UpgradeRoom()
-    {
-        if (moneyManager.money >= upgradeCost)
-        {
-            moneyManager.money -= upgradeCost;
-            incomePerClick += 50;
-            PlayerPrefs.SetInt("UpgradeLevel", incomePerClick);
-            moneyManager.UpdateMoneyUI();
-            Debug.Log("Room Upgraded! New Earnings per Click: $" + incomePerClick + ". Remaining Money: $" + moneyManager.money);
-        }
-        else
-        {
-            Debug.Log("Not enough money to upgrade! Need $" + (upgradeCost - moneyManager.money) + " more.");
-        }
-    }
-
-    public int GetIncome()
-    {
-        return incomePerClick;
     }
 }

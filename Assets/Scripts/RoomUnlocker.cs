@@ -1,40 +1,61 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomUnlocker : MonoBehaviour
 {
-    public GameObject roomToUnlock;
+    public GameObject room1;
+    public GameObject room2;
+    public GameObject pressEText;
+    public MoneyManager moneyManager;
     public int unlockCost = 500;
-    private MoneyManager moneyManager;
+    private bool playerNearby = false;
 
     void Start()
     {
-        moneyManager = FindObjectOfType<MoneyManager>();
+        pressEText.SetActive(false);
+    }
 
-        if (PlayerPrefs.GetInt("RoomUnlocked", 0) == 1)
+    void Update()
+    {
+        if (playerNearby && moneyManager.money >= unlockCost)
         {
-            roomToUnlock.SetActive(true);
-            Debug.Log("Room was already unlocked (Loaded from save).");
+            pressEText.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                UnlockRoom();
+            }
         }
         else
         {
-            roomToUnlock.SetActive(false);
-            Debug.Log("Room is locked. Need $" + unlockCost + " to unlock.");
+            pressEText.SetActive(false);
         }
     }
 
-    public void TryUnlockRoom()
+    public void UnlockRoom()
     {
-        if (moneyManager.money >= unlockCost)
+        if (moneyManager.SpendMoney(unlockCost))
         {
-            moneyManager.money -= unlockCost;
-            roomToUnlock.SetActive(true);
-            PlayerPrefs.SetInt("RoomUnlocked", 1);
-            moneyManager.UpdateMoneyUI();
-            Debug.Log("Room Unlocked! Remaining Money: $" + moneyManager.money);
+            room1.SetActive(false);
+            room2.SetActive(true);
+            pressEText.SetActive(false);
+            Debug.Log("Room Unlocked!");
         }
-        else
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("Not enough money to unlock the room! Need $" + (unlockCost - moneyManager.money) + " more.");
+            playerNearby = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerNearby = false;
+            pressEText.SetActive(false);
         }
     }
 }

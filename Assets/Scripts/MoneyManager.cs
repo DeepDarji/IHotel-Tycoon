@@ -3,25 +3,33 @@ using UnityEngine.UI;
 
 public class MoneyManager : MonoBehaviour
 {
-    public Text moneyText;  
-    public int money = 100; 
+    public int money = 0;
+    public Text moneyText;
 
     void Start()
     {
-        Debug.Log("Game Started. Initial Money: $" + money);
         UpdateMoneyUI();
     }
 
-    public void EarnMoney()
+    public void AddMoney(int amount)
     {
-        money += 50;  
-        Debug.Log("Earned $50! Total Money: $" + money);
+        money += amount;
         UpdateMoneyUI();
     }
 
-    public void UpdateMoneyUI()
+    public bool SpendMoney(int amount)
     {
-        moneyText.text = "Money: $" + money;
-        Debug.Log("Money UI Updated: " + moneyText.text);
+        if (money >= amount)
+        {
+            money -= amount;
+            UpdateMoneyUI();
+            return true; // Success
+        }
+        return false; // Not enough money
+    }
+
+    void UpdateMoneyUI()
+    {
+        moneyText.text = "$" + money.ToString();
     }
 }

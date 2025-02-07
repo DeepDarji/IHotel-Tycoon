@@ -1,46 +1,34 @@
 fileFormatVersion: 2
-guid: 87606bd75bd0922478473c5f0fc65c9e
+guid: 7cf0b424962fa3a4e99a511404aa0b95
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6958271856932858753
-    second: underworld_load-sprites-16x24_0
+      213: 205026117860140742
+    second: redshrikemod1_0
   - first:
-      213: 4260567001436500468
-    second: underworld_load-sprites-16x24_1
+      213: 8813307122130281399
+    second: redshrikemod1_1
   - first:
-      213: -4052717025338713294
-    second: underworld_load-sprites-16x24_2
+      213: -7379529281958384709
+    second: redshrikemod1_2
   - first:
-      213: 2355590371773673079
-    second: underworld_load-sprites-16x24_3
+      213: -2678036692445200774
+    second: redshrikemod1_3
   - first:
-      213: 4155668119795255658
-    second: underworld_load-sprites-16x24_4
+      213: 983397282734515354
+    second: redshrikemod1_4
   - first:
-      213: -243802520744991080
-    second: underworld_load-sprites-16x24_5
+      213: -6676249898542588278
+    second: redshrikemod1_5
   - first:
-      213: 3540908196095471114
-    second: underworld_load-sprites-16x24_6
+      213: -229918790985323472
+    second: redshrikemod1_6
   - first:
-      213: 8194098331852422204
-    second: underworld_load-sprites-16x24_7
+      213: -8770006242797697151
+    second: redshrikemod1_7
   - first:
-      213: 1408065324484393915
-    second: underworld_load-sprites-16x24_8
-  - first:
-      213: -7522641508229664537
-    second: underworld_load-sprites-16x24_9
-  - first:
-      213: 6760985618783982515
-    second: underworld_load-sprites-16x24_10
-  - first:
-      213: 203175575809723032
-    second: underworld_load-sprites-16x24_11
-  - first:
-      213: 7081141201181299888
-    second: underworld_load-sprites-16x24_12
+      213: -7483248609774445994
+    second: redshrikemod1_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,287 +124,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f745be4dc904f6f90800000000000000
-      internalID: -6958271856932858753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 71
-        width: 17
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f1bf564d13902b30800000000000000
-      internalID: 4260567001436500468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_2
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 71
-        width: 17
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23b1281765bd1c7c0800000000000000
-      internalID: -4052717025338713294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_3
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 48
-        width: 49
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77e66e176fcb0b020800000000000000
-      internalID: 2355590371773673079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 27
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a69cfc42326eba930800000000000000
-      internalID: 4155668119795255658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_5
+      name: character2_1
       rect:
         serializedVersion: 2
         x: 3
-        y: 48
-        width: 12
-        height: 21
+        y: 112
+        width: 39
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89666ab26e6dd9cf0800000000000000
-      internalID: -243802520744991080
+      spriteID: 6c62bbcfa2668d200800000000000000
+      internalID: 205026117860140742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_6
+      name: character2_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 26
-        width: 17
-        height: 22
+        x: 4
+        y: 56
+        width: 40
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0e2a8a6e35d32130800000000000000
-      internalID: 3540908196095471114
+      spriteID: 7b3eef6f1282f4a70800000000000000
+      internalID: 8813307122130281399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_7
+      name: character2_5
       rect:
         serializedVersion: 2
-        x: 17
-        y: 48
-        width: 12
-        height: 21
+        x: 52
+        y: 56
+        width: 40
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3c3fa4c40947b170800000000000000
-      internalID: 8194098331852422204
+      spriteID: bbbe64b6735a69990800000000000000
+      internalID: -7379529281958384709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_8
+      name: character2_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 13
-        height: 21
+        x: 55
+        y: 112
+        width: 30
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbbff6ec3f37a8310800000000000000
-      internalID: 1408065324484393915
+      spriteID: a7e775b21d3b5dad0800000000000000
+      internalID: -2678036692445200774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_9
+      name: character2_6
       rect:
         serializedVersion: 2
-        x: 32
+        x: 100
+        y: 56
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94a97e4e9ab5ad00800000000000000
+      internalID: 983397282734515354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character2_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 112
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e91ade6123953a0800000000000000
+      internalID: -6676249898542588278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character2_7
+      rect:
+        serializedVersion: 2
+        x: 4
         y: 0
-        width: 64
-        height: 49
+        width: 40
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e0bc59a7653a9790800000000000000
-      internalID: -7522641508229664537
+      spriteID: 03ce128e31a2fccf0800000000000000
+      internalID: -229918790985323472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_10
+      name: character2_8
       rect:
         serializedVersion: 2
-        x: 3
+        x: 52
         y: 0
-        width: 12
-        height: 21
+        width: 40
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b3d42b5998d3dd50800000000000000
-      internalID: 6760985618783982515
+      spriteID: 187c514a9cdaa4680800000000000000
+      internalID: -8770006242797697151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underworld_load-sprites-16x24_11
+      name: character2_9
       rect:
         serializedVersion: 2
-        x: 16
+        x: 100
         y: 0
-        width: 13
-        height: 21
+        width: 40
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89a8c271c13d1d200800000000000000
-      internalID: 203175575809723032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: underworld_load-sprites-16x24_12
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 15
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b45bcca764454260800000000000000
-      internalID: 7081141201181299888
+      spriteID: 65a55709909262890800000000000000
+      internalID: -7483248609774445994
       vertices: []
       indices: 
       edges: []
@@ -425,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6ea8edb79785e541a695acb517132d8
     internalID: 0
     vertices: []
     indices: 
@@ -434,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      character2_1: 205026117860140742
+      character2_2: -2678036692445200774
+      character2_3: -6676249898542588278
+      character2_4: 8813307122130281399
+      character2_5: -7379529281958384709
+      character2_6: 983397282734515354
+      character2_7: -229918790985323472
+      character2_8: -8770006242797697151
+      character2_9: -7483248609774445994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

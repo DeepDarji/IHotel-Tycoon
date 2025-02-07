@@ -11,13 +11,15 @@ public class PlayerController : MonoBehaviour
     public int moneyRequired = 10;
 
     public GameObject room2, room3, room4;
-    public GameObject room2Entry, room3Entry, room4Entry; // Room entry triggers
+    public GameObject room2Entry, room3Entry, room4Entry;
 
     private GameObject roomToUnlock;
-    private GameObject entryToHide; // Entry object to hide after unlock
+    private GameObject entryToHide;
 
     public Text moneyText;
     public Text popupText;
+
+    public JoystickController joystick; // Reference to joystick controller
 
     private void Start()
     {
@@ -36,14 +38,15 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        // ?? Use Joystick Input
+        movement.x = joystick.Horizontal();
+        movement.y = joystick.Vertical();
         movement.Normalize();
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = movement * moveSpeed;
+        rb.linearVelocity = movement * moveSpeed; // Apply movement
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -61,7 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             if (money >= moneyRequired)
             {
-                ShowPopup("Press 'U' to unlock Room 2");
+                ShowPopup("Press 'Unlock' to unlock Room 2");
                 roomToUnlock = room2;
                 entryToHide = room2Entry;
             }
@@ -75,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             if (money >= moneyRequired)
             {
-                ShowPopup("Press 'U' to unlock Room 3");
+                ShowPopup("Press 'Unlock' to unlock Room 3");
                 roomToUnlock = room3;
                 entryToHide = room3Entry;
             }
@@ -89,7 +92,7 @@ public class PlayerController : MonoBehaviour
         {
             if (money >= moneyRequired)
             {
-                ShowPopup("Press 'U' to unlock Room 4");
+                ShowPopup("Press 'Unlock' to unlock Room 4");
                 roomToUnlock = room4;
                 entryToHide = room4Entry;
             }
@@ -110,13 +113,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void UnlockRoom()
+    public void UnlockRoom() // Make Unlock Button work
     {
         if (roomToUnlock != null && entryToHide != null && money >= moneyRequired)
         {
             money -= moneyRequired;
             roomToUnlock.SetActive(true);
-            entryToHide.SetActive(false); // Hide entry trigger
+            entryToHide.SetActive(false);
             UpdateMoneyUI();
             ShowPopup(roomToUnlock.name + " Unlocked!");
             Debug.Log(roomToUnlock.name + " Unlocked! Remaining Money: " + money);
@@ -130,7 +133,6 @@ public class PlayerController : MonoBehaviour
         entryToHide = null;
     }
 
-
     private void UpdateMoneyUI()
     {
         moneyText.text = "Money: " + money;
@@ -140,19 +142,11 @@ public class PlayerController : MonoBehaviour
     {
         popupText.text = message;
         CancelInvoke(nameof(HidePopup));
-        Invoke(nameof(HidePopup), 2f); // Hide after 2 seconds
+        Invoke(nameof(HidePopup), 2f);
     }
 
     private void HidePopup()
     {
         popupText.text = "";
-    }
-
-    private void LateUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            UnlockRoom();
-        }
     }
 }

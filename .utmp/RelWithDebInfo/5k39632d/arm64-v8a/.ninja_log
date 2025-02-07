@@ -1,0 +1,12 @@
+# ninja log v5
+81	9515	7606375246683433	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7781df82f461daf0
+32	10114	7606375253249824	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	9b6c73aec35c80fe
+58	10257	7606375250382297	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	54ac48e3b254d96e
+3	13808	7606375275547807	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	28598f8bf5e2956b
+10262	13965	7606375276346156	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4817575a662efd8
+69	14433	7606375291022338	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6f89a9e9e7e9772d
+46	14700	7606375299440301	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	473e5fc3e3cdf1ad
+13967	15161	7606375304774642	C:/Users/ddj96/IHotel Tycoon/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5k39632d/obj/arm64-v8a/libswappywrapper.so	66a2064c6e126e41
+10117	16783	7606375320333993	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	5cf77f3fdd7ef2b6
+9527	17124	7606375324815812	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4d848a9929abc74b
+17125	17408	7606375327763071	C:/Users/ddj96/IHotel Tycoon/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5k39632d/obj/arm64-v8a/libgame.so	658be852df7f6e1e

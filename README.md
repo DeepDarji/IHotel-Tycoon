@@ -1,32 +1,52 @@
-# IHotel Tycoon - Unity Room Unlocker Prototype
+# IHotel-Tycoon - 2D Game
 
-## Overview
+## 📌 Overview
+IHotel-Tycoon is a **2D battle game** developed in **Unity**. The game features multiple rooms that unlock as the player earns money by interacting with NPCs. The project serves as a **beginner-level portfolio showcase** for Unity game development, focusing on 2D level design, UI interactions, and player movement.
 
-This prototype is a simple Unity game inspired by hotel tycoon concepts where players can unlock rooms based on their in-game money. The project features two rooms, which players can unlock by pressing "E" or clicking a button after earning enough money. The game includes a basic money system, room unlocking mechanics, and a simple UI with "Press E" instructions.
+## 🎮 Features
+- **2D Level Design** with multiple rooms
+- **Player Movement** using Rigidbody2D
+- **Earning Mechanism** - Collect money by interacting with NPCs
+- **Room Unlocking System** - Unlock rooms by collecting money and pressing a button
+- **UI Elements:** Money Display, Unlock Notifications, and Interactive Buttons
+- **Android Build Support**
 
-## Features
+## 🛠 Technologies Used
+- **Unity** (Latest Stable Version)
+- **C# (MonoBehaviour & Unity API)**
+- **2D Sprites & Colliders**
+- **UI Canvas & Buttons**
 
-- **Money System**: Players earn money and unlock rooms by pressing "E" or clicking a button.
-- **Room Unlocking**: Room 1 unlocks at $500, and Room 2 unlocks at $1000.
-- **UI**: A "Press E" message appears when the player can unlock a room.
-- **Unlock Button**: An additional button is available to unlock rooms.
+### 2️⃣ Open in Unity
+1. Open **Unity Hub**
+2. Click **Open Project**
+3. Select the **CursedGojoProject** folder
+4. Open `MainScene.unity`
 
-## Gameplay Demo
+### 3️⃣ Play the Game in Editor
+- Press `Play` in the Unity Editor to test the game
 
-You can watch the gameplay demo here:  
-[Gameplay Video - YouTube](https://youtu.be/Yyz4aT3Xw7U)
+### 4️⃣ Build for Android
+1. **Go to** `File` → `Build Settings`
+2. **Select** `Android` and click `Switch Platform`
+3. Click `Build` or `Build and Run`
 
-## Setup
+## 🔑 Controls
+- **Arrow Keys / WASD** - Move Player
+- **Collide with NPC** - Earn Money
+- **Collide with Room Entry & Press 'U'** - Unlock Room
 
-1. Clone or download the repository.
-2. Open the project in Unity (version 2023 or later).
-3. Ensure all necessary packages are installed.
-4. Press **Play** to test the game.
-5. Customize the `MoneyManager`, `RoomUnlocker`, and `UnlockButton` scripts for your game needs.
+## 🛠 Scripts Breakdown
+### **PlayerController.cs**
+Handles player movement, money collection, and room unlocking.
 
-## Getting Started
+## 📝 To-Do List
+- [ ] Add More Rooms & Levels
+- [ ] Improve Animations & Effects
+- [ ] Implement Audio System
 
-### Clone the repository:
+## 🏆 Credits
+- **Developer:** Deep Darji
 
-```bash
-git clone https://github.com/DeepDarji/IHotel-Tycoon.git
+---
+💡 **Follow & Star the Repo!** ⭐ If you like this project, consider giving it a star on GitHub!
